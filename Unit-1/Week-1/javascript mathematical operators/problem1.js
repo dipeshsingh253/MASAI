@@ -1,4 +1,6 @@
-//Print "Masai School" in the console followed by "A Transformation in Education" in next line
+// You are given a number stored in a variable, with the namenumber
 
-console.log("Masai School");
-console.log("A transformation in education");
+// Multiply the number stored in the variablenumberby 50, and print the result obtained
+
+let num=50;
+console.log(num*50);
