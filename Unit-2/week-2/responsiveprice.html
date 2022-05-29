@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rsponsive Price Layout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+        @media all and (min-width:1024px){
+            #heading{
+                text-align:center;
+                font-family: 'BIZ UDPGothic', sans-serif;
+                font-family: 'Ubuntu', sans-serif;
+                width: 63%;
+                margin: auto;
+                /* border: 1px solid green; */
+            }
+            #heading p{
+                font-size:8px;
+                width: 65%;
+                margin: auto;
+                line-height:15px;
+                margin-top: 1%;
+                color: grey;
+            }
+            #heading h1{
+                width: 50%;
+                font-size:large;
+                margin: auto;
+            }
+            #main{
+                /* height: 250px; */
+                display: grid;
+                grid-template-columns: repeat(3,30%);
+                /* grid-template-rows: repeat(1,100%); */
+                justify-content: space-between;
+                /* border: 1px solid black; */
+                width: 65%;
+                margin: auto;
+                margin-top: 3%;
+                text-align:center;
+                
+            }
+            .card{
+                /* width: 30%; */
+                height: 170px;
+                font-family: 'BIZ UDPGothic', sans-serif;
+                font-family: 'Ubuntu', sans-serif;
+                font-size:small;
+                border-radius: 5px;
+                /* border: 1px solid green; */
+                padding-left:10%;
+                padding-right: 10%;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+            }
+            .card h2 ~ p{
+                font-size: 8px;
+                
+            }
+            .card p:nth-child(1){
+                font-weight: bold;           
+            }
+            .card p:nth-child(3){
+                font-style: italic;    
+                /* border: 1px solid red;    */
+                margin: 0;    
+            }
+            .card:nth-child(1) h2{
+                color:#4da87e;
+                margin: 0;
+                /* border: 1px solid green; */
+                
+            }
+            .card:nth-child(2) h2{
+                color: #dc885a;
+                margin: 0;
+            }
+            .card:nth-child(3) h2{
+                color: #5f91e1;
+                margin: 0;
+            }
+            .button{
+                width: 70%;
+                margin: auto;
+                margin-top:15%;
+                margin-bottom: -10%;
+                border: 1px solid blue;
+                border-radius:3px;
+            }
+            button{
+                height: 25px;
+                width: 100%;
+                background-color: white;
+                border: transparent;
+                color: #5f91e1;
+                font-size:smaller;
+                font-weight: bold;
+                font-family: 'BIZ UDPGothic', sans-serif;
+                font-family: 'Ubuntu', sans-serif;
+            }
+            button:hover{
+                background-color: #5f91e1;
+                color: white;
+            }
+        }
+        @media all and (min-width:768px) and (max-width:1024px){
+            #heading{
+                text-align:center;
+                font-family: 'BIZ UDPGothic', sans-serif;
+                font-family: 'Ubuntu', sans-serif;
+                width: 63%;
+                margin: auto;
+                /* border: 1px solid green; */
+            }
+            #heading p{
+                font-size:8px;
+                width: 65%;
+                margin: auto;
+                line-height:15px;
+                margin-top: 1%;
+                color: grey;
+            }
+            #heading h1{
+                width: 50%;
+                font-size:large;
+                margin: auto;
+            }
+            #main{
+                /* height: 250px; */
+                display: grid;
+                grid-template-columns: repeat(2,49%);
+                grid-template-rows: repeat(1,50%);
+                justify-content: space-between;
+                /* border: 1px solid black; */
+                width: 50%;
+                margin: auto;
+                margin-top: 3%;
+                text-align:center;
+                
+            }
+            .card{
+                /* width: 30%; */
+                height: 170px;
+                margin-top: 3%;
+                font-family: 'BIZ UDPGothic', sans-serif;
+                font-family: 'Ubuntu', sans-serif;
+                font-size:small;
+                border-radius: 5px;
+                /* border: 1px solid green; */
+                padding-left:10%;
+                padding-right: 10%;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+            }
+            .card h2 ~ p{
+                font-size: 8px;
+                
+            }
+            .card p:nth-child(1){
+                font-weight: bold;           
+            }
+            .card p:nth-child(3){
+                font-style: italic;    
+                /* border: 1px solid red;    */
+                margin: 0;    
+            }
+            .card:nth-child(1) h2{
+                color:#4da87e;
+                margin: 0;
+                /* border: 1px solid green; */
+                
+            }
+            .card:nth-child(2) h2{
+                color: #dc885a;
+                margin: 0;
+            }
+            .card:nth-child(3) h2{
+                color: #5f91e1;
+                margin: 0;
+            }
+            .button{
+                width: 70%;
+                margin: auto;
+                margin-top:15%;
+                margin-bottom: -10%;
+                border: 1px solid blue;
+                border-radius:3px;
+            }
+            button{
+                height: 25px;
+                width: 100%;
+                background-color: white;
+                border: transparent;
+                color: #5f91e1;
+                font-weight: bold;
+                font-size:smaller;
+                font-family: 'BIZ UDPGothic', sans-serif;
+                font-family: 'Ubuntu', sans-serif;
+            }
+            button:hover{
+                background-color: #5f91e1;
+                color: white;
+            }
+            /* .card:nth-child(3){
+             grid-area: ;
+            } */
+        }
+        @media all and (min-width:320px) and (max-width:767px){
+            #heading{
+                text-align:center;
+                font-family: 'BIZ UDPGothic', sans-serif;
+                font-family: 'Ubuntu', sans-serif;
+                width: 63%;
+                margin: auto;
+                /* border: 1px solid green; */
+            }
+            #heading p{
+                font-size:8px;
+                width: 65%;
+                margin: auto;
+                line-height:15px;
+                margin-top: 1%;
+                color: grey;
+            }
+            #heading h1{
+                width: 50%;
+                font-size:large;
+                margin: auto;
+            }
+            #main{
+                /* height: 250px; */
+                display: grid;
+                grid-template-columns: repeat(1,100%);
+                grid-template-rows: repeat(3,200px);
+                justify-content: space-between;
+                /* border: 1px solid black; */
+                width: 50%;
+                margin: auto;
+                margin-top: 3%;
+                text-align:center;      
+            }
+            .card{
+                /* width: 30%; */
+                height: 170px;
+                /* margin-top: 1%; */
+                font-family: 'BIZ UDPGothic', sans-serif;
+                font-family: 'Ubuntu', sans-serif;
+                font-size:small;
+                border-radius: 5px;
+                /* border: 1px solid green; */
+                padding: 0;
+                padding-left:10%;
+                padding-right: 10%;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+            }
+            .card h2 ~ p{
+                font-size: 8px;
+                
+            }
+            .card p:nth-child(1){
+                font-weight: bold;           
+            }
+            .card p:nth-child(3){
+                font-style: italic;    
+                /* border: 1px solid red;    */
+                margin: 0;    
+            }
+            .card:nth-child(1) h2{
+                color:#4da87e;
+                margin: 0;
+                /* border: 1px solid green; */
+                
+            }
+            .card:nth-child(2) h2{
+                color: #dc885a;
+                margin: 0;
+            }
+            .card:nth-child(3) h2{
+                color: #5f91e1;
+                margin: 0;
+            }
+            .button{
+                width: 70%;
+                margin: auto;
+                margin-top:15%;
+                margin-bottom: -10%;
+                border: 1px solid blue;
+                border-radius:3px;
+            }
+            button{
+                height: 25px;
+                width: 100%;
+                background-color: white;
+                border: transparent;
+                color: #5f91e1;
+                font-size:smaller;
+                font-weight: bold;
+                font-family: 'BIZ UDPGothic', sans-serif;
+                font-family: 'Ubuntu', sans-serif;
+            }
+            
+            button:hover{
+                background-color: #5f91e1;
+                color: white;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="heading">
+        <h1>Choose a plan that right for your business</h1>
+        <p>We collect reveiw from our users so you can get an honest opinion of what an experience with our website really like &excl;</p>
+    </div>
+    <div id="main">
+        <div class="card">
+            <p>Starter Plan</p>
+            <h2>Free</h2>
+            <p>Per month</p>
+            <p>We collect reveiw from our users so you can get an honest opinion of what an experience with our website.</p>
+            <div class="button">
+                <button>Start Now</button>
+            </div>
+        </div>
+        <div class="card">
+            <p>Business Plan</p>
+            <h2>&dollar;39.00</h2>
+            <p>Per month</p>
+            <p>We collect reveiw from our users so you can get an honest opinion of what an experience with our website.</p>
+            <div class="button">
+                <button>Start Now</button>
+            </div>
+        </div>
+        <div class="card">
+            <p>Premium Plan</p>
+            <h2>&dollar;59.00</h2>
+            <p>Per month</p>
+            <p>We collect reveiw from our users so you can get an honest opinion of what an experience with our website.</p>
+            <div class="button">
+                <button>Start Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

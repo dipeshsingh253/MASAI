@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai Nav</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+        #navbar{
+            display: flex;
+            justify-content: space-around;
+            font-family: 'BIZ UDPGothic', sans-serif;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        #nav-tabs{
+            display: flex;
+            width: 55%;
+            justify-content: space-between;
+        }
+       .refer{
+           background-color: #f3fdff;
+           width: 20%;
+           border-radius: 10px;
+           text-align: center;
+           display: flex;
+           justify-content:center;
+           align-items: center;
+       }
+       .refer img{
+           height: 25px;
+           padding-bottom:5px ;
+       }
+       .login{
+           border: 1px solid #fbc5d0;
+           border-radius: 10px;
+           width: 10%;
+           text-align: center;
+           color: red;
+       }
+       .tab:hover, .refer:hover{
+           color: red;
+       }
+       .login:hover{
+           background-color:#fbc5d0;
+       }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div id="logo">
+            <img src="https://www.masaischool.com/img/navbar/logo.svg" alt="">
+        </div>
+        <div id="nav-tabs">
+            <div class="tab">
+                <p>COURSES</p>
+                <!-- <label for="course"></label>
+                <select name="course" id="course">
+                    <optgroup label="COURSES"></optgroup>
+                    <optgroup label="Full-Time">
+                        <option value="Full Stack Web Development">
+                            Full Stack Web Development &nbsp;&gt;
+                        </option>
+                    </optgroup>
+                    <optgroup label="Part-Time">
+                        <option value="Full Stack Android Development">
+                            Full Stack Android Development &nbsp;&gt;
+                        </option>
+                    </optgroup>
+                </select> -->
+            </div>
+            <div class="tab">
+                <p>FEES &amp; ISA</p>
+            </div>
+            <div class="tab">
+                <p>ABOUT US</p>
+            </div>
+            <div class="tab">
+                <p>HIRE FROM US</p>
+            </div>
+            <div class="tab">
+                <p>FAQ</p>
+            </div>
+            <div class="tab">
+                <p>EVENTS</p>
+            </div>
+            <div class="refer">
+                <p>REFER &amp; EARN</p>&nbsp;&nbsp;
+                <img src="https://www.masaischool.com/img/referral/hand.png" alt="">
+            </div>
+            <div class="login">
+                <p>LOGIN</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

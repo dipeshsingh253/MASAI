@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zig Zag</title>
+    <style>
+        #main{
+            width: 80%;
+            height: 300px;
+            margin: auto;
+            display: grid;
+            grid-template-areas: "a b b b c"
+                                 "d d d e f"
+                                 "g h i i i";
+            grid-template-columns:repeat(5,2fr);
+            grid-template-rows: repeat(3,2fr);
+            gap: 10px;
+        }
+        .box{
+            background-color:rgb(5, 71, 5);
+            border-radius: 5px;
+        }
+        .box:nth-child(1){
+            grid-area: a;
+            
+        }
+        .box:nth-child(2){
+            grid-area: b;
+        }
+        .box:nth-child(3){
+            grid-area: c;
+        }
+        .box:nth-child(4){
+            grid-area: d;
+        }
+        .box:nth-child(5){
+            grid-area: e;
+        }
+        .box:nth-child(6){
+            grid-area: f;
+        }
+        .box:nth-child(7){
+            grid-area: g;
+        }
+        .box:nth-child(8){
+            grid-area: h;
+        }
+        .box:nth-child(9){
+            grid-area: i;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

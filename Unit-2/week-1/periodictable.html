@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodic Table</title>
+    <style>
+        .main{
+            width: 80%;
+            height:600px;
+            margin: auto;
+            padding-bottom: 5%;
+        }
+        .title{
+            text-align: center;
+        }
+        #spdblock{
+            width: 100%;
+            height: 75%;
+            display: flex;
+        }
+        #sgroup{
+            width: 10%;
+            height:100%;
+            display:flex;
+        }
+        #group1{
+            width: 50%;
+            height:100%;
+        }
+        #group2{
+            margin-top: 43.5%;
+            width:50%;
+            height:85%;
+        }
+        .hydrogen{
+            width: 80%;
+            height:13%;
+            background-color:#af0102;
+            border: 2px solid black;
+            margin: auto;
+            text-align: center;
+            display:flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+        
+        }
+        
+        .group1-elements{
+            width: 100%;
+            height: 85%;
+            margin-top: 7%;
+        }
+        .elementsgroup1{
+            width: 80%;
+            height:14%;
+            background-color: #89a02c;
+            border: 2px solid black;
+            margin: auto;
+            text-align: center; 
+            margin-bottom: 9%;
+        }
+
+        .elementsgroup2{
+            width: 80%;
+            height:14%;
+            background-color: #fe5455;
+            border: 2px solid black;
+            margin: auto;
+            text-align: center;
+            margin-bottom: 9%;
+        }
+
+        /* part-2 styles */
+
+        #silicon-dgroup{
+            width:50%;
+            height: 100%;
+            position: relative;
+        }
+        #silicon{
+            width: 100%;
+            height: 43%;
+        }
+        .siliconelement{
+            width: 25%;
+            height: 72%;
+            border: 2px solid black;
+            background-color:#89a02c;
+            margin-top: 4.5%;
+            margin-left: 8%;
+        }
+        .siliconindex{
+            text-align: right;
+            padding-top:4%;
+            padding-right: 5%;
+            position:relative;
+        }
+        .siliconsign{
+            font-weight: bold;
+            font-size:3em;
+            transform: translate(5%, -60%)
+        }
+        .siliconname{
+            font-weight: lighter;
+            transform: translate(5%, -420%)
+        }
+        #dgroup{
+            width: 100%;
+            height: 56%;
+            display: flex;
+            transform: translate(0%, -13%)
+        }
+        #group3{
+            margin-top: 16.5%;
+            padding-top: 0.4%;
+            width: 10%;
+            height:50%;
+        }
+        .group4-12{
+            width: 10%;
+            height:100%;
+        }
+        .dgroupelements{
+            width: 85%;
+            height: 21%;
+            border: 2px solid black;
+            background-color:#0200fc;
+            margin: auto;
+            text-align: center;
+            margin-bottom: 10%;
+        }
+        .dgroupelements-1{
+            width: 85%;
+            height: 42%;
+            border: 2px solid black;
+            background-color:#ffe6d5;
+            margin: auto;
+            text-align: center;
+            margin-bottom: 10%;
+        }
+/* part 3---> p block styling */
+        #pgroup{
+            width: 40%;
+            height:100%;
+            display: flex;
+            
+        }
+        .group13-17{
+            margin-top: 10.3%;
+            width:16.66%;
+            height:85%;
+        }
+        #group18{
+            width: 16.66%;
+            height:100%;
+        }
+        .darkpink{
+            width: 65%;
+            height:14%;
+            background-color: #aa0087;
+            border: 2px solid black;
+            margin: auto;
+            text-align: center;
+            margin-bottom: 7.3%;
+        }
+        .orange{
+            width: 65%;
+            height:14%;
+            background-color: #ff6600;
+            border: 2px solid black;
+            margin: auto;
+            text-align: center;
+            margin-bottom: 7.3%;
+        }
+        .darkgrey{
+            width: 65%;
+            height:14%;
+            background-color: #6d535e;
+            border: 2px solid black;
+            margin: auto;
+            text-align: center;
+            margin-bottom: 7.3%;
+        }
+        .darkgreen{
+            width: 65%;
+            height:14%;
+            background-color: #5aa02c;
+            border: 2px solid black;
+            margin: auto;
+            text-align: center;
+            margin-bottom: 7.3%;
+        }
+        .lighpink{
+            width: 65%;
+            height:14%;
+            background-color: #ff0066;
+            border: 2px solid black;
+            margin: auto;
+            text-align: center;
+            margin-bottom: 7.3%;
+        }
+        .yellow{
+            width: 65%;
+            height:11.8%;
+            background-color: #ffcc00;
+            border: 2px solid black;
+            margin: auto;
+            text-align: center;
+            margin-bottom: 7.1%;
+        }
+        .darkgrey2{
+            width: 65%;
+            height:11.8%;
+            background-color: #6d515d;
+            border: 2px solid black;
+            margin: auto;
+            text-align: center;
+            margin-bottom: 7%;
+        }
+        #fblock{
+            width: 60%;
+            height:20%;
+            margin: auto;
+            margin-top: 2%;
+        }
+        .period1{
+            width: 80%;
+            height:45%;
+            margin: auto;
+            display: flex;
+        }
+        .fblockelements{
+            height: 98%;
+            width:10%;
+            border: 1px solid #4d5b32;
+            background-color: #47582e;
+            text-align: center;
+            color: white;
+        }
+        .period2{
+            width: 80%;
+            height:45%;
+            margin: auto;
+            display: flex;
+        }
+        .fblockelements2{
+            height: 98%;
+            width:10%;
+            border: 1px solid #4d5b32;
+            background-color: #93bd5d;
+            text-align: center;
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="title">
+            <h2>THE PERIODIC TABLE OF ELEMENTS</h2>
+        </div>
+
+        <!--There are four blocks in periodic table known as s, p, d, f-->
+        <!--there are total 18 grups in periodic table-->
+        <div id="spdblock">
+            <!--s-block have 2 groups (groups == columns)-->
+           <div id="sgroup">
+            <div id="group1">
+                <div class="hydrogen">
+                    <p>H</p>
+                </div>
+                <div class="group1-elements">
+                    <div class="elementsgroup1"></div>
+                    <div class="elementsgroup1"></div>
+                    <div class="elementsgroup1"></div>
+                    <div class="elementsgroup1"></div>
+                    <div class="elementsgroup1"></div>
+                    <div class="elementsgroup1"></div>
+                </div>
+            </div>
+            <div id="group2">
+                <div class="elementsgroup2"></div>
+                <div class="elementsgroup2"></div>
+                <div class="elementsgroup2"></div>
+                <div class="elementsgroup2"></div>
+                <div class="elementsgroup2"></div>
+                <div class="elementsgroup2"></div>
+
+            </div>
+           </div> 
+<!--Part -2 silicon + dgroup-->
+
+           <div id="silicon-dgroup">
+               <div id="silicon">
+                   <div class="siliconelement">
+                    <p class="siliconindex">14</p>
+                    <p class="siliconsign">Si</p>
+                    <p class="siliconname">Silicon</p>
+                   </div>
+               </div>
+               <div id="dgroup">
+                <div id="group3">
+                    <div class="dgroupelements-1"></div>
+                    <div class="dgroupelements-1"></div>
+                </div>
+                <!-- group 4-12 have same layout so here we will use class to make our task simple -->
+                <div class="group4-12">
+                    <div class="dgroupelements"></div>
+                    <div class="dgroupelements"></div>
+                    <div class="dgroupelements"></div>
+                    <div class="dgroupelements"></div>
+                </div>
+                <div class="group4-12">
+                    <div class="dgroupelements"></div>
+                    <div class="dgroupelements"></div>
+                    <div class="dgroupelements"></div>
+                    <div class="dgroupelements"></div>
+                </div>
+                <div class="group4-12">
+                    <div class="dgroupelements"></div>
+                    <div class="dgroupelements"></div>
+                    <div class="dgroupelements"></div>
+                    <div class="dgroupelements"></div>
+                </div>
+                <div class="group4-12">
+                    <div class="dgroupelements"></div>
+                    <div class="dgroupelements"></div>
+                    <div class="dgroupelements"></div>
+                    <div class="dgroupelements"></div>
+                </div>
+                <div class="group4-12">
+                    <div class="dgroupelements"></div>
+                    <div class="dgroupelements"></div>
+                    <div class="dgroupelements"></div>
+                    <div class="dgroupelements"></div>
+                </div>
+                <div class="group4-12">
+                    <div class="dgroupelements"></div>
+                    <div class="dgroupelements"></div>
+                    <div class="dgroupelements"></div>
+                    <div class="dgroupelements"></div>
+                </div>
+                <div class="group4-12">
+                    <div class="dgroupelements"></div>
+                    <div class="dgroupelements"></div>
+                    <div class="dgroupelements"></div>
+                    <div class="dgroupelements"></div>
+                </div>
+                <div class="group4-12">
+                    <div class="dgroupelements"></div>
+                    <div class="dgroupelements"></div>
+                    <div class="dgroupelements"></div>
+                    <div class="dgroupelements"></div>
+                </div>
+                <div class="group4-12">
+                    <div class="dgroupelements"></div>
+                    <div class="dgroupelements"></div>
+                    <div class="dgroupelements"></div>
+                    <div class="dgroupelements"></div>
+                </div>
+            </div>
+           </div>
+ <!-- Part-3 p block elements -->
+           <div id="pgroup">
+               <!-- In p block group13-17 have same layout therefore we will use class-->
+               <div class="group13-17">
+                   <div class="darkpink"></div>
+                   <div class="orange"></div>
+                   <div class="orange"></div>
+                   <div class="orange"></div>
+                   <div class="orange"></div>
+                   <div class="darkgrey"></div>
+               </div>
+               <div class="group13-17">
+                   <div class="darkgreen"></div>
+                   <div class="darkpink"></div>
+                   <div class="darkpink"></div>
+                   <div class="orange"></div>
+                   <div class="orange"></div>
+                   <div class="darkgrey"></div>
+               </div>
+               <div class="group13-17">
+                   <div class="darkgreen"></div>
+                   <div class="darkgreen"></div>
+                   <div class="darkpink"></div>
+                   <div class="darkpink"></div>
+                   <div class="orange"></div>
+                   <div class="darkgrey"></div>
+               </div>
+               <div class="group13-17">
+                   <div class="darkgreen"></div>
+                   <div class="darkgreen"></div>
+                   <div class="darkgreen"></div>
+                   <div class="darkpink"></div>
+                   <div class="darkpink"></div>
+                   <div class="darkgrey"></div>
+                </div>
+                <div class="group13-17">
+                    <div class="lighpink"></div>
+                    <div class="lighpink"></div>
+                    <div class="lighpink"></div>
+                    <div class="lighpink"></div>
+                    <div class="lighpink"></div>
+                    <div class="darkgrey"></div>
+                </div>
+                <div id="group18">
+                    <div class="yellow"></div>
+                    <div class="yellow"></div>
+                    <div class="yellow"></div>
+                    <div class="yellow"></div>
+                    <div class="yellow"></div>
+                    <div class="yellow"></div>
+                    <div class="darkgrey2"></div>
+                </div>
+           </div>
+        </div>
+        <div id="fblock">
+            <div class="period1">
+                <div class="fblockelements"><p>La</p></div>
+                <div class="fblockelements"></div>
+                <div class="fblockelements"></div>
+                <div class="fblockelements"></div>
+                <div class="fblockelements"></div>
+                <div class="fblockelements"></div>
+                <div class="fblockelements"></div>
+                <div class="fblockelements"></div>
+                <div class="fblockelements"></div>
+                <div class="fblockelements"></div>
+                <div class="fblockelements"></div>
+                <div class="fblockelements"></div>
+                <div class="fblockelements"></div>
+                <div class="fblockelements"></div>
+            </div>
+            <div class="period2">
+                <div class="fblockelements2"></div>
+                <div class="fblockelements2"></div>
+                <div class="fblockelements2"></div>
+                <div class="fblockelements2"></div>
+                <div class="fblockelements2"></div>
+                <div class="fblockelements2"></div>
+                <div class="fblockelements2"><p>Am</p></div>
+                <div class="fblockelements2"></div>
+                <div class="fblockelements2"></div>
+                <div class="fblockelements2"></div>
+                <div class="fblockelements2"></div>
+                <div class="fblockelements2"></div>
+                <div class="fblockelements2"></div>
+                <div class="fblockelements2"><p>No</p></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

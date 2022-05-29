@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai Investors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+       
+        @media all and (min-width:1024px){
+             /* Hide scrollbar for Chrome, Safari and Opera */
+            body::-webkit-scrollbar {
+                display: none;
+            }
+
+            /* Hide scrollbar for IE, Edge and Firefox */
+            body {
+                -ms-overflow-style: none;  /* IE and Edge */
+                scrollbar-width: none;  /* Firefox */
+            }
+            #main_heading{
+                width: 70%;
+                /* border: 1px solid red; */
+                text-align: center;
+                margin: auto;
+                font-family: 'BIZ UDPGothic', sans-serif;
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 1em;
+                font-weight: bolder;
+            }
+            .board_com{
+                width: 80%;
+                display: flex;
+                margin: auto;
+                justify-content: space-between;
+                /* border: 1 px solid green; */
+            }
+            .com{
+                /* border: 1px solid brown; */
+                width: 30%;
+                
+            }
+            .com img{
+                width: 100%;
+            }
+            #main{
+                /* border: 1px solid black; */
+                margin-top: 3%;
+            }
+            #investors{
+                width: 70%;
+                height: 2300px;
+                margin: auto;
+                margin-top: 10px;
+                display: grid;
+                justify-content: space-between;
+                grid-template-columns: repeat(4,23%);
+                grid-template-rows: repeat(5,20%);
+                row-gap: 1.7%;
+                column-gap: 1.5%;
+                /* border: 1px solid green; */
+                margin-bottom: 20%;
+            }
+            .card{
+                /* border: 1px solid green; */
+                text-align: center;
+                border-radius: 15px;
+                padding-bottom: 5%;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+            }
+            #main h1{
+                width: 70%;
+                margin: auto;
+                /* border: 1px solid red; */
+                text-align: center;
+                margin-bottom: 2%;
+                font-family: 'BIZ UDPGothic', sans-serif;
+                font-family: 'Ubuntu', sans-serif;
+                font-size:2em;
+                font-weight: bolder;
+            }
+            .profile{
+                width: 100%;
+                height: 70%;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+
+            }
+            .card p + img{
+                width: 45%;
+                height: auto;
+            }
+            .card img + p{
+                font-weight: bold;
+                /* font-size: 0.6em; */
+                
+            }
+        }
+        @media all and (min-width:768px) and (max-width:1024px){
+             /* Hide scrollbar for Chrome, Safari and Opera */
+             body::-webkit-scrollbar {
+                display: none;
+            }
+
+            /* Hide scrollbar for IE, Edge and Firefox */
+            body {
+                -ms-overflow-style: none;  /* IE and Edge */
+                scrollbar-width: none;  /* Firefox */
+            }
+            #main_heading{
+                width: 70%;
+                /* border: 1px solid red; */
+                text-align: center;
+                margin: auto;
+                font-family: 'BIZ UDPGothic', sans-serif;
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 0.5em;
+                font-weight: bolder;
+            }
+            .board_com{
+                width: 80%;
+                display: flex;
+                margin: auto;
+                justify-content: space-between;
+                /* border: 1 px solid green; */
+            }
+            .com{
+                /* border: 1px solid brown; */
+                width: 30%;
+                
+            }
+            .com img{
+                width: 100%;
+            }
+            #main{
+                /* border: 1px solid black; */
+                margin-top: 4%;
+            }
+            #investors{
+                width: 65%;
+                height: 1800px;
+                margin: auto;
+                margin-top: 10px;
+                display: grid;
+                justify-content: space-between;
+                grid-template-columns: repeat(3,31%);
+                grid-template-rows: repeat(7,13%);
+                row-gap: 1%;
+                column-gap: 0.2%;
+                /* border: 1px solid green; */
+                margin-bottom: 5%;
+            }
+            .card{
+                /* border: 1px solid green; */
+                font-size:0.5em;
+                text-align: center;
+                border-radius: 15px;
+                padding-bottom: 10%;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+            }
+            #main h1{
+                width: 70%;
+                margin: auto;
+                /* border: 1px solid red; */
+                text-align: center;
+                margin-bottom: 2%;
+                font-family: 'BIZ UDPGothic', sans-serif;
+                font-family: 'Ubuntu', sans-serif;
+                font-size:1em;
+                font-weight: bolder;
+            }
+            .profile{
+                width: 100%;
+                height: 70%;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+
+            }
+            .card p + img{
+                width: 45%;
+                height: auto;
+            }
+            .card img + p{
+                font-weight: bold;
+            }
+        }
+        @media all and (min-width:320px) and (max-width:767px){
+            /* Hide scrollbar for Chrome, Safari and Opera */
+            body::-webkit-scrollbar {
+                display: none;
+            }
+
+            /* Hide scrollbar for IE, Edge and Firefox */
+            body {
+                -ms-overflow-style: none;  /* IE and Edge */
+                scrollbar-width: none;  /* Firefox */
+            }
+            #main_heading{
+                width: 100%;
+               
+                /* border: 1px solid red; */
+                text-align: center;
+                margin: auto;
+                font-family: 'BIZ UDPGothic', sans-serif;
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 0.6em;
+                font-weight: bolder;
+            }
+            #main_heading h1{
+                width: 40%;
+                margin:auto;
+            }
+            .board_com{
+                width: 100%;
+                height: 300px;
+                margin: auto;
+                /* border: 1 px solid red; */
+            }
+            .com{
+                /* border: 1px solid brown; */
+                width: 100%;
+                height: 33%;
+            }
+            .com img{
+                width: 100%;
+                height: 100%;
+            }
+            #main{
+                /* border: 1px solid black; */
+                margin-top: 8%;
+            }
+            #investors{
+                width: 90%;
+                /* height: 2300px; */
+                margin: auto;
+                margin-top: 20px;
+                display: grid;
+                justify-content: space-between;
+                grid-template-columns: repeat(2,48%);
+                grid-template-rows: repeat(10,20%);
+                row-gap: 0.5%;
+                column-gap: 0.1%;
+                /* border: 1px solid green; */
+                margin-bottom: 50%;
+            }
+            .card{
+                /* border: 1px solid green; */
+                text-align: center;
+                border-radius: 15px;
+                /* padding-bottom: 5%; */
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+            }
+            #main h1{
+                width: 50%;
+                margin: auto;
+                /* border: 1px solid red; */
+                text-align: center;
+                margin-bottom: 2%;
+                font-family: 'BIZ UDPGothic', sans-serif;
+                font-family: 'Ubuntu', sans-serif;
+                font-size:1.5em;
+                font-weight: bolder;
+            }
+            .profile{
+                width: 100%;
+                height: 70%;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+
+            }
+            .card p + img{
+                width: 45%;
+                height: auto;
+                /* border: 1px solid red; */
+            }
+            .card img ~ p{
+                font-size: 70%;
+                /* margin-bottom: 3px; */
+               
+            }
+            .card p:nth-child(3){
+                margin: 0;
+                /* font-size: 0.5em; */
+                
+            }
+            .card img + p{
+                font-weight: bold;
+                /* font-size: 0.6em; */
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="main_heading">
+        <h1>Board Members</h1>
+        <div class="board_com">
+            <div class="com">
+                <img src="https://www.masaischool.com/img/our-investors/india-q-borderless.svg" alt="">
+            </div>
+            <div class="com">
+                <img src="https://www.masaischool.com/img/our-investors/unitus-borderless.svg" alt="">
+            </div>
+            <div class="com">
+                <img src="https://www.masaischool.com/img/our-investors/omidyar-borderless.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <h1>Strategic Investors</h1>
+        <div id="investors">
+            <div class="card">
+                <img class="profile" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg" alt="">
+                <p>Vijay Shekhar Sharma</p>
+                <p>Founder & CEO</p>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg" alt="">
+            </div>
+            <div class="card">
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png" alt="" class="profile">
+                <p>Kunal Shah</p>
+                <p>Founder</p>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/cred_0a47d7b4f8.png" alt="">
+            </div>
+            <div class="card">
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/amrish_rau_pine_labs_144e5e587c.jpg" alt="" class="profile">
+                <p>Amrish Rau</p>
+                <p>CEO</p>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/pine_labs_0aa2407434.png" alt="">
+            </div>
+            <div class="card">
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Sampad_swain_Instamojo_f12bf6341e.jpg" alt="" class="profile">
+                <p>Sampad Swain</p>
+                <p>Co-Founder & CEO</p>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/instamojo_8763e704f7.png" alt="">
+            </div>
+            <div class="card">
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Ankush_Sachdeva_Sharechat_4e44dbbe6b.jpg" alt="" class="profile">
+                <p>Ankush Sachdeva</p>
+                <p>Co-Founder & CEO</p>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_rect_73d95cd4e1.svg" alt="">
+            </div>
+            <div class="card">
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/bhanu_pratap_singh_sharechat_11fdd7b47a.jpg" alt="" class="profile">
+                <p>Bhanu Pratap Singh</p>
+                <p>Co-Founder & CTO</p>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_rect_73d95cd4e1.svg" alt="">
+            </div>
+            <div class="card">
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/farid_ahsan_sharechat_1251f28141.png" alt="" class="profile">
+                <p>Farid Ahsan</p>
+                <p>Co-Founder & COO</p>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_rect_73d95cd4e1.svg" alt="">
+            </div>
+            <div class="card">
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Amit_Kumar_Agarwal_Nobroker_a8a279ad91.jpg" alt="" class="profile">
+                <p>Amit Kumar Agarwal</p>
+                <p>Founder & CEO</p>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/nobroker_rect_28c9778c30.svg" alt="">
+            </div>
+            <div class="card">
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Akhil_Gupta_Nobroker_539cd97f6c.jpg" alt="" class="profile">
+                <p>Akhil Gupta</p>
+                <p>Founder & CTO</p>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/nobroker_rect_28c9778c30.svg" alt="">
+            </div>
+            <div class="card">
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/saurbh_garg_nobroker_c0c71cc431.jpeg" alt="" class="profile">
+                <p>Saurabh Garg</p>
+                <p>Co-Founder & CBO</p>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/nobroker_rect_28c9778c30.svg" alt="">
+            </div>
+            <div class="card">
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Vipin_Pathak_Care24_acd02cd173.jpg" alt="" class="profile">
+                <p>Vipin Pathak</p>
+                <p>Co-Founder & CEO</p>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/care24_1164f7a2cd.png" alt="">
+            </div>
+            <div class="card">
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Ramakant_Sharma_livespace_0308e3627d.jpg" alt="" class="profile">
+                <p>Ramakant Sharma</p>
+                <p>Founder</p>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/livspace_f9318b2e8d.png" alt="">
+            </div>
+            <div class="card">
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Mohit_Tandon_Delhivery_b43fee16c4.jpg" alt="" class="profile">
+                <p>Mohit Tandon</p>
+                <p>Co-Founder</p>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/delhivery_17e85a76ed.png" alt="">
+            </div>
+            <div class="card">
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Abhishek_Goyal_tracxn_5b2f61d87d.jpg" alt="" class="profile">
+                <p>Abhishek Goyal</p>
+                <p>Co-Founder</p>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/tracxn_6d0c3de2ee.svg" alt="">
+            </div>
+            <div class="card">
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Anurag_Jain_Kredx_b6ed6a31c6.jpg" alt="" class="profile">
+                <p>Anurag Jain</p>
+                <p>Founder & Executive Director</p>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/kredx_rect_204437078a.svg" alt="">
+            </div>
+            <div class="card">
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Harshvardhan_Lunia_Lendingkart_44d72a6fcd.jpg" alt="" class="profile">
+                <p>Harshvardhan Lunia</p>
+                <p>Co-Founder & CEO</p>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/lendingkart_rect_d0d30d7b53.svg" alt="">
+            </div>
+            <div class="card">
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/sunil_rao_amazon_dfd2daa06d.jpeg" alt="" class="profile">
+                <p>Sunil Rao</p>
+                <p>Country Head Strategy and Corporate</p>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/amazon_rect_9e0cd101b1.svg" alt="">
+            </div>
+            <div class="card">
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Sharda_Balaji_Novojuris_2a206f2f88.jpg" alt="" class="profile">
+                <p>Sharda Balaji</p>
+                <p>Founder</p>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/novojuris_ad9499f5b9.svg" alt="">
+            </div>
+            <div class="card">
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Kulin_Shah_Onsurity_0dd3a1802f.jpg" alt="" class="profile">
+                <p>Kulin Shah</p>
+                <p>Co-Founder</p>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/onsurity_5500f1c3b1.png" alt="">
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
